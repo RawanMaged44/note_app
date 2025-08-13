@@ -4,8 +4,9 @@ import 'package:note_application_hive/widgets/custom_icon.dart';
 class CustomAppbar extends StatelessWidget {
 
   final String title;
+  final void Function()? onPressed;
   final IconData icon;
-  CustomAppbar({required this.title, required this.icon});
+   CustomAppbar({required this.title, required this.icon, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
