@@ -5,9 +5,8 @@ import 'package:note_application_hive/notes_cubit/notes_cubit.dart';
 import 'package:note_application_hive/widgets/note_item.dart';
 
 class NotesListview extends StatelessWidget {
-  NotesListview({super.key, required this.notes});
+  NotesListview({super.key, });
 
-  List<NoteModel> notes;
 
   @override
   Widget build(BuildContext context) {

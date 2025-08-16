@@ -32,19 +32,10 @@ class _NotesViewBodyState extends State<NotesViewBody> {
             height: 55,
           ),
           CustomAppbar(title: 'Notes', icon: Icons.search),
-          //  Expanded(
-          //   child: BlocBuilder<NotesCubit, NotesState>(
-          //     builder: (context, state) {
-          //
-          //       List<NoteModel> notes = BlocProvider.of<NotesCubit>(context).notes!;
-          //
-          //      ;
-          //       return NotesListview(
-          //         notes: notes,
-          //       );
-          //     },
-          //   ),
-          // )
+           Expanded(
+            child:  NotesListview(
+                ),
+          )
         ],
       ),
     );

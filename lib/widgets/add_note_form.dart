@@ -6,6 +6,7 @@ import 'package:note_application_hive/add_note_cubit/add_note_cubit.dart';
 import 'package:note_application_hive/add_note_cubit/add_note_state.dart';
 import 'package:note_application_hive/models/note_model.dart';
 
+import 'color_list_view.dart';
 import 'custom_button.dart';
 import 'custom_text_field.dart';
 
@@ -39,6 +40,9 @@ class _AddNoteFormState extends State<AddNoteForm> {
           onSaved: (value) {
             subTitle = value;
           },),
+        const SizedBox(height: 16,),
+
+        const ColorItemListview(),
         const SizedBox(height: 16),
         BlocBuilder<AddNoteCubit, AddNoteState>(
           builder: (context, state) {
@@ -69,3 +73,5 @@ class _AddNoteFormState extends State<AddNoteForm> {
     );
   }
 }
+
+
